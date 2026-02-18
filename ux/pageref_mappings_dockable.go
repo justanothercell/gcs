@@ -165,7 +165,7 @@ func openExternalPDF(filePath string, highlight string, pageNum int) {
 			switch s {
 			case "$FILE":
 				return filePath
-			case "$WORD":
+			case "$TEXT":
 				return highlight
 			case "$PAGE":
 				return strconv.Itoa(pageNum)
